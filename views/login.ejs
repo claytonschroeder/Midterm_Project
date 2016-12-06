@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Goofspiel - Lobby</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700,700i" rel="stylesheet">
+    <!-- Indernal CSS -->
+    <link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <!-- Nav CSS -->
+    <link rel="stylesheet" type="text/css" href="/styles/nav.css">
+    <!-- New Tweet CSS -->
+    <link rel="stylesheet" type="text/css" href="/styles/sign-in.css">
+    <link rel="stylesheet" type="text/css" href="/styles/active-games.css">
+
+  </head>
+
+  <body>
+
+
+    <!-- Top nav bar (fixed) -->
+    <nav id="nav-bar">
+      <img class="logo" src="/images/logo.png">
+      <span class="header">Goofspiel</span>
+     <!--  <text class="compose">sign in <i class="fa fa-sign-in" aria-hidden="true"></i></text> -->
+    </nav>
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+    <section class="sign-in">
+      <h2><i class="fa fa-user" aria-hidden="true"></i> Sign in </h2>
+      <form action="/login" method="POST">
+        <label for="email"></label>
+        <br>
+        <input id="text" type="text" name="name" placeholder="username" style="width: 300px"></input>
+        <br>
+        <br>
+        <input id="password" type="password" name="password" placeholder="enter password" style="width: 300px"></input>
+        <br>
+        <br>
+        <input type="submit" value="Submit"></input>
+        <br>
+      </form>
+    </section>
+    </main>
+
+    <!-- External JS -->
+    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/sign_in.js"></script>
+    <!-- <script type="text/javascript" src="/scripts/tweet-article-hover.js"></script> -->
+  </body>
+</html>

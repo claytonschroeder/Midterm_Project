@@ -1,0 +1,55 @@
+body {
+  background-image: url("/images/poker-table-background.jpg");
+  position: relative;
+
+  img.card{
+    height: 110px;
+    width: 85px;
+    position: absolute;
+    left:0px;
+    transition: left 1500ms, opacity 200ms;
+  }
+
+text.compose {
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: black;
+  width: 100px;
+  border: 1px solid black;
+  line-height: 50px;
+  &:hover{
+  color: #153802;
+  background-color: #eee;
+  }
+
+
+
+
+  }
+  .prize img{
+    top: 250px;
+    left: -100px;
+  }
+  .opponentCard img{
+    top: 250px;
+    left: -100px;
+  }
+  .player .card{
+    top: 500px;
+    opacity: .8;
+    &:hover{
+      opacity: 1.0;
+      top: 490px;
+    }
+
+  }
+
+  .opponent .card{
+  border-radius: 5px;
+  }
+
+}

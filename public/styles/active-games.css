@@ -1,0 +1,42 @@
+main.container {
+  margin: 120px;
+}
+
+div.game {
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 410px;
+  margin: auto;
+  margin-top: 10px;
+  opacity: .8;
+  padding: 10px;
+}
+
+div.game:hover {
+  border: 1px solid black;
+  opacity: 1.0
+}
+
+div.game img {
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  float: left;
+}
+
+
+div.game h1 {
+    vertical-align: top;
+    padding-left: 10px;
+    font-size: 150%;
+}
+
+div.game p {
+    vertical-align: top;
+    padding-left: 10px;
+    font-size: 150%;
+}
+
+
+

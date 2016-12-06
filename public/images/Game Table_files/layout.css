@@ -1,0 +1,27 @@
+body {
+  background-image: url("/images/poker-table-background.jpg");
+  position: relative;
+}
+
+body img.card {
+  height: 110px;
+  width: 85px;
+  position: absolute;
+  left: 0px;
+  transition: left 1000ms, opacity 400ms;
+}
+
+body .prize img {
+  top: 250px;
+  left: 550px;
+}
+
+body .player .card {
+  top: 500px;
+  opacity: .8;
+}
+
+body .player .card:hover {
+  opacity: 1.0;
+  top: 490px;
+}

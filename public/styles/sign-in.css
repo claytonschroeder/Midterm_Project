@@ -1,0 +1,56 @@
+.sign-in {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #eee;
+  width: 410px;
+  margin: auto;
+  margin-top: 120px;
+  padding-right: 10px;
+  padding-left: 10px;
+  opacity: 0.8;
+}
+
+.sign-in:hover {
+  border: 1px solid black;
+  opacity: 1.0
+}
+
+.sign-in h2 {
+  color: black;
+  border-bottom: 2px solid black;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.sign-in textarea {
+  display: inherit;
+  width: 390px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.sign-in .counter {
+  float: right;
+  font-style: italic;
+}
+
+.sign-in input {
+  margin-left:2px;
+  margin-bottom: 5px;
+}
+
+#id {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #eee;
+  width: 410px;
+  margin: auto;
+  margin-top: 20px;
+  height: 100px;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+
+
+

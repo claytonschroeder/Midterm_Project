@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Goofspiel - Lobby</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700,700i" rel="stylesheet">
+    <!-- Indernal CSS -->
+    <link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <!-- Nav CSS -->
+    <link rel="stylesheet" type="text/css" href="/styles/nav.css">
+    <!-- New Tweet CSS -->
+    <link rel="stylesheet" type="text/css" href="/styles/sign-in.css">
+    <link rel="stylesheet" type="text/css" href="/styles/active-games.css">
+
+  </head>
+
+  <body>
+
+
+    <!-- Top nav bar (fixed) -->
+    <nav id="nav-bar">
+      <img class="logo" src="/images/logo.png">
+      <span class="header">Goofspiel</span>
+      <!-- <text class="compose">New Game <i class="fa fa-sign-in" a  ria-hidden="true"></i></text> -->
+      <form method='POST' action='/logout'>
+        <label for='logout'></label>
+        <input type='submit' value='logout'></input>
+      </form>
+    </nav>
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+    <section class="sign-in">
+      <h2><i class="fa fa-user" aria-hidden="true"></i> Start a new game </h2>
+      <form action="/" method="POST">
+        <label for="user"></label>
+        <br>
+        <input type="submit" value="Start"></input>
+        <br>
+      </form>
+    </section>
+
+    <section id="games-container">
+    <% results.forEach(function(game) { %>
+      <div class="game">
+        <img src="/images/logo.png"/>
+        <h1><%=game.type%></h1>
+        <p>Host: <%=game.host_name%></p>
+        <p>Guest: <%=game.guest_name%></p>
+        <p>It is <%= game.whose_turn %> turn</p>
+        <a href="game/<%=game.id%>">Continue playing</a>
+      </div>
+    <% }) %>
+    </section>
+
+    </main>
+
+    <!-- External JS -->
+    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/new_game.js"></script>
+    <!-- <script type="text/javascript" src="/scripts/tweet-article-hover.js"></script> -->
+  </body>
+</html>
